@@ -6,7 +6,6 @@ def main():
         print("Bienvenido a Datacity")
         print("----------------------------------------------------")
         print("----------------------------------------------------")
-
         print("1. Registro de datos de ciudades")
         print("2. Editar registros")
         print("-----------------------------------------------")
@@ -16,17 +15,15 @@ def main():
         print("6. Busquedad por codigo postal")
         print("-----------------------------------------------")
         print("7. Salir")
-        try:
-            opt=int(input("Ingrese su opcion: "))
-            if opt==1:
-            elif opt==2:
-            elif opt==3:
-            elif opt==4:
-            elif opt==5:
-            elif opt==6:
-            elif opt==7:
-                break
-            else:
-                print("La opcion que ingresaste no esta disponible.")
-        except Exception:
-            print("Error introducciste un valor no valido")
+
+        opcion = input(">> ")
+        if opcion == "1": crear_ciudad()
+        elif opcion == "2": actualizar_ciudad()
+        elif opcion == "3": leer_ciudades()
+        elif opcion == "4": leer_ciudad_nombre()
+        elif opcion == "5": leer_ciudad_pais()
+        elif opcion == "6": leer_ciudad_cod()
+        elif opcion == "7": break
+        else: print("Opcion no valida")
+
+main()
