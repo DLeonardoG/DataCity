@@ -26,7 +26,7 @@ def leer_city_nombre():
             # line()
             es()
             linea()
-            return
+        return
     print_(f"La ciudad ",nombre," no existe...")
     return
 
@@ -64,7 +64,7 @@ def leer_city_pais():
             # line()
             es()
             linea()
-            return
+        return
     print_(f"La ciudad ",nombre," no existe...")
     return
 
