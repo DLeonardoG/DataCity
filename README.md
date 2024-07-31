@@ -9,19 +9,19 @@
 | 4. | [Uso del Repositorio](#Uso) |
 | 5. | [Instrucciones de Ejecución](#Instrucciones) |
 | 6. | [Mapa de la app](#Mapa) |
-| 7. | [Contacto](#Contacto) |
+| 7. | [Autores](#Autores) |
 
 ## Descripcion🚀
 
-El proyecto kaiosamapp es una plataforma de gestión integral para una empresa de servicios de telefonia, diseñada para administrar diferentes aspectos relacionados con servicios, productos y gestion de descuentos. Esta aplicación permite a los administradores gestionar los datos pertinentes.
+El proyecto DataCity es una plataforma de gestión consiste en un buscador de ciudades por su nombre, codigo postal, numero de poblacion y pais al que pertenece.
 
 ## Características🧮
 
-1. **Gestión de Usuarios** 👥: Permite registrar y gestionar cuentas de los clientes y sus planes.
+1. **Crear ciudad** 👥: Permite registrar y añadir informacion de la ciudad que se quiere crear
 
-2. **Gestión de Servicios** 🌐: Permite la creación, lectura, edición y eliminación de servicios.
+2. **Actualizar ciudad** 🌐: Permite actualizar informacion de la ciudad 
 
-3. **Gestión de Productos** 🌐: Permite la creación, lectura, edición y eliminación de productos.
+3. **Buscar ciudad** 🌐: Permite buscar ciudades
 
 
 ## Tecnologias🖥️
@@ -30,7 +30,7 @@ El proyecto kaiosamapp es una plataforma de gestión integral para una empresa d
 
 ## Uso📝
 
-Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado por roles y funcionalidades dentro de kaiosamapp. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
+Este repositorio contiene el código fuente del proyecto DataCity, organizado por roles y funcionalidades dentro de CityData. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
 
 ## Instrucciones📐
 
@@ -48,18 +48,16 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 
 ```mermaid
 graph TD
-    A[Kaiosamapp] --> B[Administrador]
-    B --> D[Administrar servicios]
-    B --> E[Administrar productos]
-    B --> F[Asignar productos]
-    B --> G[Asignar Servicios]
-    B --> H[Gestiona Usuarios]
+    A[Datacity] --> B[Administrador]
+    B --> D[Administrar ciudades]
+    B --> E[Buscar ciudades]
+    B --> F[Eliminar ciudades]
+    B --> G[Revisar ciudades]
+    B --> H[Filtrar Ciudades]
 ```
 
-## Autor 👤
+## Autores👤
 
-[Leonardo Gonzalez](https://github.com/DLeonardoG) 
+[Leonardo Gonzalez](https://github.com/DLeonardoG)
 
-## Contacto
-
-Linkedin: <a href="https://www.linkedin.com/in/leonardo-gonzalez-302321311/" target="_blank">Leonardo Gonzalez</a>
+[Erik Sneyder](https://github.com/ErikSneyPlata)
