@@ -1,7 +1,7 @@
 from funciones_segundarias import *
 import funciones
 
-def leer_city():
+def leer_city_nombre():
     datos= funciones.cargar_datos()
     clear_screen()
     nombre =input("Ingrese el nombre de la ciudad: ").lower()
@@ -30,9 +30,9 @@ def leer_city():
     print_(f"La ciudad ",nombre," no existe...")
     return
 
-def leer_ciudad():
+def leer_ciudad_nombre():
     while True:
-        leer_city()
+        leer_city_nombre()
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
