@@ -3,6 +3,7 @@ from importaciones import *
 
 def main():
     while True:
+        diseño_logo()
         print("Bienvenido a Datacity")
         print("----------------------------------------------------")
         print("----------------------------------------------------")
