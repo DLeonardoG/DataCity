@@ -23,54 +23,40 @@ def crear_ciudad():
         if continuar == "2": break
         else: clear_screen()
 
-
-def actualizar_city():
+def leer_citys():
     datos = funciones.cargar_datos()
     clear_screen()
-    nombre =input("Ingrese el nombre de la ciudad: ").lower()    
+    print_("Ciudades")
+    linea()
+    for sn in range(len(datos["ciudades"])):
+        print_(datos["ciudades"][sn]["nombre"].capitalize())
+    linea()
     for i in range(len(datos["ciudades"])):
-        if datos["ciudades"][i]["nombre"] == nombre:
-            while True:
-                op = input("Ingrese una opcion:\n    0. Salir \n    1. Nombre\n    2. codigo postal\n    3. Poblacion\n    4. Pais\n\n>>  ")
-                if op == "1": 
-                    name =  datos["ciudades"][i]["nombre"]
-                    datos["ciudades"][i]["nombre"]=input("Ingrese el nuevo nombre de la ciudad: ").lower()
-                    es()
-                    print_(f"La ciudad ",name," ha sido cambiada a ", datos["ciudades"][i]["nombre"]," con éxito!")
-                    funciones.guardar_datos(datos)
-                    return
-                elif op == "2": 
-                    name =  datos["ciudades"][i]["codigo postal"]
-                    datos["ciudades"][i]["codigo postal"]=input("Ingrese el nuevo codigo postal de la ciudad: ").lower()
-                    es()
-                    print_(f"La ciudad ",name," ha sido cambiada a ", datos["ciudades"][i]["codigo postal"]," con éxito!")
-                    funciones.guardar_datos(datos)
-                    return
-                elif op == "3": 
-                    name =  datos["ciudades"][i]["poblacion"]
-                    datos["ciudades"][i]["poblacion"]=input("Ingrese la nueva poblacion de la ciudad: ")
-                    es()
-                    print_(f"La poblacion ",name," ha sido cambiada a ", datos["ciudades"][i]["poblacion"]," con éxito!")
-                    funciones.guardar_datos(datos)
-                    return
-                elif op == "4": 
-                    name =  datos["ciudades"][i]["pais"]
-                    datos["ciudades"][i]["pais"]=input("Ingrese el nuevo pais de la ciudad: ")
-                    es()
-                    print_(f"El pais ",name," ha sido cambiada a ", datos["ciudades"][i]["pais"]," con éxito!")
-                    funciones.guardar_datos(datos)
-                    return
-                elif op == "0": 
-                    funciones.guardar_datos(datos)
-                    return
-                else: print_("Opcion no valida")
-    print(f"La ciudad",nombre,"no existe...")     
-    funciones.guardar_datos(datos)
+        linea()
+        es()
+        # line()
+        print_("Nombre ciudad: ",datos["ciudades"][i]["nombre"].capitalize())
+        # line()
+        es()
+        # line()
+        print_("Codigo postal: ",datos["ciudades"][i]["codigo postal"].capitalize())
+        # line()
+        es()
+        # line()
+        print_("Poblacion : ",datos["ciudades"][i]["poblacion"])
+        # line()
+        es()
+        # line()
+        print_("Pais: ",datos["ciudades"][i]["pais"].capitalize())
+        # line()
+        es()
+        linea()
     return
 
-def actualizar_ciudad():
+def leer_ciudades():
     while True:
-        actualizar_city()
+        leer_citys()
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+
