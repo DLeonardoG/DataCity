@@ -1,4 +1,5 @@
 import json
+from importaciones import *
 
 def main():
     while True:

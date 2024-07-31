@@ -26,9 +26,8 @@ def leer_city():
             # line()
             es()
             linea()
-            return datos
+            return
     print_(f"La ciudad ",nombre," no existe...")
-    funciones.guardar_datos(datos)
     return
 
 def leer_ciudad():
@@ -38,4 +37,3 @@ def leer_ciudad():
         if continuar == "2": break
         else: clear_screen()
 
-leer_ciudad()

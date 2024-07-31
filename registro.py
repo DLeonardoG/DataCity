@@ -10,7 +10,7 @@ def crear_city():
     ciudades["codigo postal"]=input("Ingrese el codigo postal: ").lower()
     ciudades["poblacion"]=input("Ingrese poblacion de la ciudad: ").lower()
     ciudades["pais"]=input("Ingrese el pais: ")
-    
+
     datos["ciudades"].append(ciudades)
     print(ciudades["nombre"]," ha sido registrada con éxito!")
     funciones.guardar_datos(datos)
@@ -22,6 +22,4 @@ def crear_ciudad():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
-
-
 
