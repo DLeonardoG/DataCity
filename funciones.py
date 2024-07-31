@@ -1,14 +1,16 @@
 import json
 
-def leer_crear_json():
+def cargar_datos():
     try:
-        with open("json\\datos.json","r") as lectura:
+        with open("datos.json","r") as lectura:
             datos = json.load(lectura)
             return datos
     except FileNotFoundError:
-        return {}
+        return {
+            "ciudades":[]
+        }
 
-def guardar_actualizar_json(datos):
-    with open("json\\datos.json","w") as guardar:
+def guardar_datos(datos):
+    with open("datos.json","w", encoding="utf-8") as guardar:
         json.dump(datos,guardar, indent=4)
     print("\n...GUARDANDO...\n")
