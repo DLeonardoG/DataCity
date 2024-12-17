@@ -1,62 +1,61 @@
 <h1 style="text-align: center;">DataCity 🌏</h1>
 
-## Tabla de contenido
-| Indice | Título  |
+## Table of Contents
+| Index | Title  |
 |--|--|
-| 1. | [Descripción](#Descripcion) |
-| 2. | [Características](#Características) |
-| 3. | [Tecnologías Utilizadas](#Tecnologias) |
-| 4. | [Uso del Repositorio](#Uso) |
-| 5. | [Instrucciones de Ejecución](#Instrucciones) |
-| 6. | [Mapa de la app](#Mapa) |
-| 7. | [Autores](#Autores) |
+| 1. | [Description](#Description) |
+| 2. | [Features](#Features) |
+| 3. | [Technologies Used](#Technologies) |
+| 4. | [Repository Usage](#Usage) |
+| 5. | [Execution Instructions](#Instructions) |
+| 6. | [App Map](#Map) |
+| 7. | [Authors](#Authors) |
 
-## Descripcion🚀
+## Description🚀
 
-El proyecto DataCity es una plataforma de gestión consiste en un buscador de ciudades por su nombre, codigo postal, numero de poblacion y pais al que pertenece.
+The DataCity project is a management platform consisting of a city search tool by name, postal code, population number, and the country it belongs to.
 
-## Características🧮
+## Features🧮
 
-1. **Crear ciudad** 👥: Permite registrar y añadir informacion de la ciudad que se quiere crear
+1. **Create City** 👥: Allows registering and adding information about the city you want to create.
 
-2. **Actualizar ciudad** 🌐: Permite actualizar informacion de la ciudad 
+2. **Update City** 🌐: Allows updating city information.
 
-3. **Buscar ciudad** 🌐: Permite buscar ciudades
+3. **Search City** 🌐: Allows searching for cities.
 
+## Technologies🖥️
 
-## Tecnologias🖥️
+- **Python** 🐍: The entire application is built with Python.
 
-- **Python** 🐍: Todas la aplicacion esta hecha con python.
+## Usage📝
 
-## Uso📝
+This repository contains the source code for the DataCity project, organized by roles and functionalities within CityData. Each directory and file is structured to facilitate the development, maintenance, and deployment of the application.
 
-Este repositorio contiene el código fuente del proyecto DataCity, organizado por roles y funcionalidades dentro de CityData. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
+## Instructions📐
 
-## Instrucciones📐
-
-### Requisitos Previos
+### Prerequisites
 
 - Python 3
 
-### Pasos
+### Steps
 
-1. Clona el repositorio a tu máquina local. 
-2. Configura adecuadamente todo lo adecuado respecto a python.
-3. Ejecuta el proyecto desde la terminal.
+1. Clone the repository to your local machine.  
+2. Properly configure all necessary Python settings.  
+3. Run the project from the terminal.
 
-## Mapa🗺️
+## Map🗺️
 
 ```mermaid
 graph TD
-    A[Datacity] --> B[Administrador]
-    B --> D[Administrar ciudades]
-    B --> E[Buscar ciudades]
-    B --> F[Eliminar ciudades]
-    B --> G[Revisar ciudades]
-    B --> H[Filtrar Ciudades]
+    A[DataCity] --> B[Administrator]
+    B --> D[Manage Cities]
+    B --> E[Search Cities]
+    B --> F[Delete Cities]
+    B --> G[Review Cities]
+    B --> H[Filter Cities]
 ```
 
-## Autores👤
+## Authors👤
 
 [Leonardo Gonzalez](https://github.com/DLeonardoG)
 
